@@ -7,7 +7,7 @@ resources:
   - argocd-applications/cert-manager.yaml
   - argocd-applications/istio-operator.yaml
   - argocd-applications/istio.yaml    
-  #- argocd-applications/knative.yaml
+  - argocd-applications/knative.yaml
 
   ## Kubeflow  
   - argocd-applications/oidc-auth.yaml  
@@ -21,7 +21,7 @@ resources:
   #- argocd-applications/pipelines-iam-roles-for-service-accuonts.yaml
   #- argocd-applications/pipelines-kube2iam.yaml
   - argocd-applications/katib.yaml
-  # - argocd-applications/kfserving.yaml
+  - argocd-applications/kfserving.yaml
   - argocd-applications/pod-defaults.yaml
   - argocd-applications/jupyter-web-app.yaml
   - argocd-applications/notebook-controller.yaml

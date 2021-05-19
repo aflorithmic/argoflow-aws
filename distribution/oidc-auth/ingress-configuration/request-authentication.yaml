@@ -8,7 +8,7 @@ spec:
     matchLabels:
       app: istio-ingressgateway
   jwtRules:
-  - issuer: <<__oidc.issuer__>>
+  - issuer: https://auth.platform.aflr.io
     jwksUri: <<__oidc.jwks_uri__>>
     # forwardOriginalToken: true
 # ---
@@ -22,5 +22,5 @@ spec:
 #     matchLabels:
 #       app: centraldashboard
 #   jwtRules:
-#   - issuer: <<__oidc.issuer__>>
+#   - issuer: https://auth.platform.aflr.io
 #     jwksUri: <<__oidc.jwks_uri__>>

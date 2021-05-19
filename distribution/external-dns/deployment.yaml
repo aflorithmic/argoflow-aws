@@ -22,14 +22,14 @@ spec:
         image: docker.io/bitnami/external-dns:0.7.6-debian-10-r91
         env:
         - name: AWS_REGION
-          value: <<__aws_region__>>
+          value: eu-west-1
         args:
           - --source=service
           - --source=ingress
-          - --domain-filter=<<__domain__>>
+          - --domain-filter=platform.aflr.io
           - --provider=aws
           - --policy=upsert-only
           - --aws-zone-type=public
-          - --aws-assume-role=<<__role_arn.external_dns__>>
+          - --aws-assume-role=arn:aws:iam::161747956760:role/eksctl-ml-cluster-ServiceRole-HKNXG6ZC03XD
           - --registry=txt
-          - --txt-owner-id=<<__cluster_name__>>
+          - --txt-owner-id=ml
