@@ -30,11 +30,11 @@ spec:
         - --http-address=0.0.0.0:4180
         - --upstream=static://200
         - --skip-provider-button=true
-        - --cookie-domain=.<<__domain__>>
-        - --whitelist-domain=.<<__domain__>>
+        - --cookie-domain=.platform.aflr.io
+        - --whitelist-domain=.platform.aflr.io
         - --oidc-issuer-url=<<__oidc.issuer__>>
         
-        # - --redirect-url=https://<<__subdomain_dashboard__>>.<<__domain__>>/oauth2/callback 
+        # - --redirect-url=https://kubeflow.platform.aflr.io/oauth2/callback 
         # - --scope=read_user profile email openid
         # - --prefer-email-to-user=true
 
@@ -88,9 +88,9 @@ spec:
         # - name: OAUTH2_PROXY_SKIP_PROVIDER_BUTTON
         #   value: "true"
         # - name: OAUTH2_PROXY_COOKIE_DOMAINS
-        #   value: .<<__domain__>>
+        #   value: .platform.aflr.io
         # - name: OAUTH2_PROXY_WHITELIST_DOMAINS
-        #   value: .<<__domain__>>
+        #   value: .platform.aflr.io
         # - name: OAUTH2_PROXY_OIDC_ISSUER_URL
         #   value: <<__oidc.issuer__>>
         - name: OAUTH2_PROXY_SESSION_STORE_TYPE
