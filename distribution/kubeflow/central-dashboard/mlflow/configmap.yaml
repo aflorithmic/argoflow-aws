@@ -15,6 +15,12 @@ data:
         },
         {
           "type": "item",
+          "text": "Models",
+          "link": "/models/",
+          "icon": "editor:space-bar"
+        },
+        {
+          "type": "item",
           "link": "/tensorboards/",
           "text": "Tensorboards",
           "icon": "assessment"
